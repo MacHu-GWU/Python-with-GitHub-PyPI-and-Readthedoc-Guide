@@ -26,7 +26,7 @@
 
 一个组织良好的Python扩展包项目的文件结构看起来应该是这样的:
 
-.. code-block:: console
+.. code-block:: python
 
 	<project_name> # 项目名称
 		|--- build # setup.py 生成的build文件, sphinx生成的html网站
@@ -42,7 +42,7 @@
 
 另外地, 出于个人开发方便起见, 有一些自定义的文件, 目前就不进行详细介绍了。
 
-.. code-block:: console
+.. code-block:: python
 
 	<project_name>
 		|--- create_doctree.py # 用于生成 module and index
@@ -96,9 +96,9 @@ Github提供了一个 `release <https://help.github.com/articles/creating-releas
 
 	这部分默认会包含一个源代码包, 通常文件名是 ``<package_name>-<version>.tar.gz``。这部分是当用户使用 ``pip install package_name`` 时所下载的源码包, 然后 ``pip`` 会自动完成 `build, install <https://docs.python.org/2/install/#splitting-the-job-up>`_, clean up的全过程。	这个源码包的生成是自动的, 具体原理在下一节中介绍。
 
-	同时用户还可以自己上传一些其他格式的安装文件, 比如: ``.egg``, ``.whl``, ``.zip``, ``.exe``(用于windows下的安装)。我们可以通过命令:
+	同时用户还可以自己上传一些其他格式的安装文件, 比如: ``.egg``, ``.whl``, ``.zip``, ``.exe`` (用于windows下的安装)。我们可以通过命令:
 
-	.. code-block::
+	.. code-block:: console
 
 		$ python setup.py sdist upload -r pypi
 
