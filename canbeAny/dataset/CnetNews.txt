@@ -1,0 +1,37 @@
+Aersion of Apple's iOS might not draw the same crowd as a fancy new phone or a super-sized tablet, but today's release of iOS 9, the company's new mobile operating system, marks the first taste many folks will get of Apple's vision for the future of mobile devices.
+
+The software upgrade brings with it a slew of changes and new features. Battery life has marginally improved, and a new low power mode just might help you make it through your next drained-battery catastrophe. Siri and the oft-neglected Notes app learn a few new tricks, Apple tries its hand at current events with News, and even Apple Maps gets a bit more useful.
+
+If you've bought a mobile Apple gadget in the last few years, you should be good to go with iOS 9. The new operating system is compatible with the iPhone 4S, iPad 2, original iPad Mini and the fifth-generation iPod Touch, and all of the devices that followed them. You can grab it right now, as an over-the-air download through the iOS settings, or through iTunes.
+
+But the real stars of the show are the iPad Air 2, iPad Mini 4 and upcoming iPad Pro: iOS 9's new multitasking powers transforms those tablets into real office machines, offering up the ability to run apps side by side (called "split view") and watch videos or chat on FaceTime with nary a hitch or drop in performance. Other recent iPads get pared-back upgrades, including better on-screen keyboards, picture-in-picture video and a more limited side by side app mode called Slide Over.
+
+And there's plenty more besides. Let's take a look at some of the best that iOS 9 has to offer.
+
+A smarter Siri and Search
+Apple's digital assistant Siri has learned a few new tricks. Shutterbugs searching for a particular shot can get a lot more specific: say, "Show me photos I took in Oakland" or "Show me photos I took last April" and it will do exactly that. If you're looking at a bar in Maps or writing an email to a friend when you're suddenly interrupted, you can say "remind me about this later," and Siri will make that note for you. It's a simple little touch that just might see you talking to your device more often.
+
+If you're not especially keen on chatting with your gadgets, you'll find more to like in the improved search functionality. You can now get to Search by swiping to the right on the homescreen, as well as by swiping down. And it's quite a bit more useful, too: search for a contact, and you'll see important calendar dates (such as birthdays) and see shortcut keys to message or call them right away. Search for something else, and you'll see related results from the supported apps on your phone, including Notes, Apple Music and Maps, when applicable. Search is now also a bit more proactive: it'll show you recent or frequent contacts, locations of interest that are nearby, and attempt to suggest apps or places of interest based on things you've done in the past.
+
+A new source for News
+Apple's News app is an attempt to muscle in on the ever-growing realm of apps and services such as Flipboard and Feedly that try to corral our interests into a single, personalized newsfeed. There are quite a few publications to choose from, and an even broader range of topics to sift through. You can swipe between stories in your feed, share things of interest to contacts or other apps, and save things to read later.
+
+Things feel a little disorganized, though: I'm currently subscribed to the Camera Lens, Digital Cameras and Photography topics, which generally point to the same publications, and the same stories. There's also no real way to organize the reading experience. With the RSS reader Feedly, I've manually organized publications into categories that I can sift through at my leisure -- the "Tech" category gets scoured first thing every morning and regularly during the day, while I might save "Comics" or "Gaming News" for the evening, or the weekend. No such luck with Apple News: there's just a firehose of headlines, and while I could drill down to individual categories or publications, that's just not as efficient as the tools I'm already using.
+
+Getting around with Maps
+Apple Maps has gotten a bit of an overhaul, too. Don't snicker -- the service has come a long way since its debut, when famous landmarks melted into the landscape or disappeared altogether. In iOS 9 you'll find support for public transit routes (finally), so you'll be able to factor the local bus or subway into your plans for your next jaunt.
+
+Tap on a bus stop or train station, and you'll get a list of the lines that run there, and a departure schedule -- much like Google's offerings. Apple Maps still has a ways to go, though, as there are still missing bits -- including entire transit lines. This isn't going to replace Google Maps any time soon, but if you're wholly enmeshed in Apple's ecosystem, things are looking up.
+
+Take a note with Notes
+I've never given the Notes app much thought. It was there if I ever needed to jot a quick note, but the other apps I've got running on my iPad, including Evernote and OneNote, can handle that and so much more. But with iOS 9, the humble Notes app gains support for some relatively sophisticated sketching and doodling tools. You can now create checklists on the fly, tuck images into your notes, and share things from other apps, such as links from a browser or addresses from Maps. There are also formatting options, so you can add some style to your jottings.
+
+It's a much improved experience. iCloud support, as well as easy folder creation, could make this a good option for Apple fans who want a simple way to stay organized with a built-in app. Sure, it won't replace more robust tools, but if nothing else fits the bill it remains a neat option.
+
+Other odds and ends
+There are quite a few smaller quality of life improvements, too. The app switcher sports a new look, showing your currently open apps as slightly narrower pages to shuffle through, instead of taking up the bulk of the screen. It's a small touch, but means that you can see more of your open apps at a time, and quickly get to the one you want, or close the ones you don't. The keyboard has also received a rather welcome change: press the shift key, and the letters on the keyboard will become capitalized. Release it, and they're all lowercase. Again, an infinitesimal change, but one that makes entering passwords quite a bit easier.
+
+The iPhone 6S and 6S Plus
+I bet you're wondering about the other newfangled features you've been hearing about. Things like context-sensitive menus that show up when you press and hold on an app icon, or being able to say, "Hey, Siri!" to get the digital assistant's attention whether your phone is plugged in or not.
+
+Unless you're picking up the upcoming iPhone 6S or iPhone 6S Plus, you're out of luck. Both of those features are tied to the hardware in Apple's new devices, with functionality that presumably can't be tied into a software update.
