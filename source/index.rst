@@ -12,6 +12,16 @@
 	- 示例PyPI页面: https://pypi.python.org/pypi/windtalker
 	- 示例在线文档网站: http://windtalker.readthedocs.org/
 
+传送门:
+
+- `使用Github保管你的代码库 <github_>`_
+- `创建你的setup.py文件 <setup_>`_
+- `部署你的项目在PyPI上的主页 <pypi_>`_
+- `让你的包能通过pip install被安装 <pipinstall_>`_
+- `部署你的文档网站 <readthedoc_>`_
+- `Readthedoc简明介绍 <readthedoc_quickguide_>`_
+
+
 正文
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -50,6 +60,8 @@
 		|--- view_doc.bat # 用于一键打开build好的网站主页
 
 
+.. _github:
+
 使用Github保管你的代码库
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -65,6 +77,8 @@ Github提供了一个 `release <https://help.github.com/articles/creating-releas
 2. 在github shell中使用 ``$ git tag ...`` 命令。在git中管理tag请参考: https://git-scm.com/book/en/v2/Git-Basics-Tagging
 
 
+.. _setup:
+
 创建你的setup.py文件
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -78,6 +92,8 @@ Github提供了一个 `release <https://help.github.com/articles/creating-releas
 
 关于setup.py文件的详细介绍, 我会在我的另一篇文章中详细陈述。
 
+
+.. _pypi:
 
 部署你的项目在PyPI上的主页
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -119,6 +135,8 @@ Github提供了一个 `release <https://help.github.com/articles/creating-releas
 第一次注册时, 会需要你的PyPI账号密码, 然后系统会在你的操作系统用户根目录下生成一个.pypirc文件, 里面包含了你的身份信息。在同一台机器同一个账户, 以后就不会需要输入账号密码了。
 
 
+.. _pipinstall:
+
 让你的包能通过 ``pip install`` 被安装
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -132,6 +150,8 @@ Github提供了一个 `release <https://help.github.com/articles/creating-releas
 	
 	$ python setup.py sdist upload -r pypi
 
+
+.. _readthedoc:
 
 部署你的文档网站
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -149,6 +169,8 @@ Github提供了一个 `release <https://help.github.com/articles/creating-releas
 
 **注意:** 如果你的包对其他第三方包的依赖较大, 那么就需要设置requirements.txt, 以及virtual environment。requirements.txt告诉readthedoc在build的时候要安装哪些依赖的包, virtual env能配置出合适的虚拟环境。这是因为sphinx在build网页的时候, 要保证包里所有的模块都是可以被import的。这算是使用readthedoc的一个不好的地方吧。
 
+
+.. _readthedoc_quickguide:
 
 Readthedoc简明介绍
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -191,8 +213,9 @@ Table and Content
 .. toctree::
    :maxdepth: 3
 
-	为你的项目选择一个合适的开源协议 <chapter1 - compare five open source license>
-
+	setup.py文件详解 <chapter1 - setup.py file guide for human>
+	为你的项目选择一个合适的开源协议 <chapter2 - compare five open source license>
+	About <about>
 
 Indices and tables
 ================================================================================

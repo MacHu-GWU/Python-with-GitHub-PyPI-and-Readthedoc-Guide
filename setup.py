@@ -60,6 +60,9 @@ NAME = "canbeAny" # name your package
 
 VERSION = __import__("canbeAny").__version__
 PACKAGES = [NAME] + ["%s.%s" % (NAME, i) for i in find_packages(NAME)]
+PACKAGE_DATA = {
+    "canbeAny": ["*.txt"],
+},
 SHORT_DESCRIPTION = "An example package can be any of package." # GitHub Short Description
 AUTHOR = "Sanhe Hu"
 AUTHOR_EMAIL = "husanhe@gmail.com"
@@ -97,9 +100,7 @@ setup(
     name = NAME,
     packages = PACKAGES,
     include_package_data = True,
-    package_data  = {
-        "canbeAny": ["*.txt"],
-    },
+    package_data  = PACKAGE_DATA,
     version = VERSION,
     author = AUTHOR,
     author_email = AUTHOR_EMAIL,
