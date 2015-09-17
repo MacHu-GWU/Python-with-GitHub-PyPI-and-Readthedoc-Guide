@@ -5,7 +5,7 @@
 
 前言:
 
-	本文提供的演示项目的网址: https://github.com/MacHu-GWU/How-to-release-document-your-open-source-Python-project, 可以用于跟着本文的介绍, 完整地练习一遍。
+	本文提供的演示项目的网址: https://github.com/MacHu-GWU/Python-with-GitHub-PyPI-and-Readthedoc-Guide, 可以用于跟着本文的介绍, 完整地练习一遍。
 
 	- 示例Github项目主页: https://github.com/MacHu-GWU/windtalker
 	- 示例PyPI页面: https://pypi.python.org/pypi/windtalker

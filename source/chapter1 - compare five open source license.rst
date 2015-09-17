@@ -5,7 +5,7 @@
 
 如果你不想要详细了解它们的内容和区别, 请参照下面的流程图(原图作者: 阮一峰)
 
-.. image:: choose_free_software_licenses.png
+.. image:: _static\choose_free_software_licenses.png
 
 
 五大开源协议详解
@@ -103,7 +103,7 @@ MIT
 .. include:: LICENSE_template\MIT.txt
 
 
-Apache2.0:
+Apache2.0
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 .. include:: LICENSE_template\Apache2.0.txt
 
