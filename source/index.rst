@@ -1,4 +1,8 @@
 
+- GitHub: https://github.com/MacHu-GWU/Python-with-GitHub-PyPI-and-Readthedoc-Guide
+- PyPI: https://pypi.python.org/pypi/canbeAny
+- Online Documentation: http://python-with-github-pypi-and-readthedoc-guide.readthedocs.org/
+
 如何将你的Python项目用Github保管, 并在Pypi上发布, 和部署你的在线文档网站
 ================================================================================
 
@@ -90,7 +94,7 @@ Github提供了一个 `release <https://help.github.com/articles/creating-releas
 
 - 如何写setup.py文件: https://docs.python.org/2/distutils/setupscript.html
 
-关于setup.py文件的详细介绍, 我会在我的另一篇文章中详细陈述。
+关于setup.py文件的详细介绍, 我会在我的 `另一篇文章 <http://python-with-github-pypi-and-readthedoc-guide.readthedocs.org/chapter1%20-%20setup.py%20file%20guide%20for%20human.html>`_ 中详细陈述。
 
 
 .. _pypi:
@@ -205,6 +209,7 @@ Readthedoc简明介绍
 .. image:: http://www.appguru.com.tw/appguru/apps/files/2012/10/A_006_300dpi1.gif
 
 CopyRight: Sanhe Hu 2015, 转载请注明出处
+
 
 
 Table and Content
