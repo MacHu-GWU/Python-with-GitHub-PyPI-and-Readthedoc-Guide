@@ -49,10 +49,13 @@
 		|--- <package_name> # 你开发的扩展包的名字, 你的Python代码都在这里了
 		|--- LICENSE.txt # 版权信息
 		|--- requirements.txt # 为pypi提供了所依赖的其他包的信息
+		|--- MANIFEST.in # PyPI上传安装包时候的发布文件信息
 		|--- setup.cfg # setup的额外配置信息
 		|--- setup.py # 安装文件
 		|--- readme.rst (or readme.md) # github, pypi项目主页说明文档
 		|--- make.bat # sphinx用于生成网站的批处理文件
+
+对于 ``MANIFEST.in`` 文件, 需要特别注意: 和 `package_data <http://python-with-github-pypi-and-readthedoc-guide.readthedocs.org/chapter1%20-%20setup.py%20file%20guide%20for%20human.html#include-package-data>`_ 不同的是, 这个储存的是包之外的文件。 详情请看: https://docs.python.org/2/distutils/sourcedist.html#manifest-template 
 
 另外地, 出于个人开发方便起见, 有一些自定义的文件, 目前就不进行详细介绍了。
 
