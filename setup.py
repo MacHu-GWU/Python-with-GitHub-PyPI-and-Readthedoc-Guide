@@ -58,7 +58,7 @@ GITHUB_ACCOUNT = "MacHu-GWU" # your GitHub account name
 RELEASE_TAG = "2015-09-17" # the GitHub release tag
 NAME = "canbeAny" # name your package
 
-VERSION = __import__("canbeAny").__version__
+VERSION = __import__(NAME).__version__
 PACKAGES = [NAME] + ["%s.%s" % (NAME, i) for i in find_packages(NAME)]
 PACKAGE_DATA = {
     "canbeAny": ["*.txt"],
