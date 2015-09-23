@@ -1,9 +1,9 @@
 from __future__ import print_function
 from docfly import Docfly
-import os
-
+import shutil
+ 
 try:
-    os.remove(r"source\canbeAny")
+    shutil.rmtree(r"source\canbeAny")
 except Exception as e:
     print(e)
      
