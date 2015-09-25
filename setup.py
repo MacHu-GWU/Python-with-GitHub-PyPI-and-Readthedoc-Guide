@@ -63,7 +63,7 @@ PACKAGES = [NAME] + ["%s.%s" % (NAME, i) for i in find_packages(NAME)]
 PACKAGE_DATA = {
     "canbeAny": ["*.txt"],
 }
-SHORT_DESCRIPTION = "An example package can be any of package." # GitHub Short Description
+SHORT_DESCRIPTION = __import__(NAME).__short_description__ # GitHub Short Description
 AUTHOR = "Sanhe Hu"
 AUTHOR_EMAIL = "husanhe@gmail.com"
 MAINTAINER = AUTHOR
