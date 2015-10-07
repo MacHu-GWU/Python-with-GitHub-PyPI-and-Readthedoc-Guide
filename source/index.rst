@@ -1,10 +1,9 @@
+如何将你的Python项目用Github保管, 并在Pypi上发布, 和部署你的在线文档网站
+================================================================================
 
 - GitHub: https://github.com/MacHu-GWU/Python-with-GitHub-PyPI-and-Readthedoc-Guide
 - PyPI: https://pypi.python.org/pypi/canbeAny
 - Online Documentation: http://python-with-github-pypi-and-readthedoc-guide.readthedocs.org/
-
-如何将你的Python项目用Github保管, 并在Pypi上发布, 和部署你的在线文档网站
-================================================================================
 
 .. image:: http://www.techweekeurope.co.uk/wp-content/uploads/2011/02/Open-Source-Software-.jpg
 
