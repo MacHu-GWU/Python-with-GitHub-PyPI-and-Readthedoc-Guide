@@ -21,8 +21,11 @@ setup.py文件详解
 
 下面我来介绍两个新手经常会遇到的问题: 
 
+在使用 ``python setup.py build``, ``python setup.py install`` 时:
+
 1. 包含子包和子包的子包
 2. 包含数据文件
+
 
 Include sub package
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -49,7 +52,7 @@ Include package data
 
 默认build安装包时, 只会编译 ``.py`` 文件。 而有的时候我们的包需要一些无法在 ``.py`` 文件中包含的数据, 例如图片等。 又或者这些常量的数量巨大, 如果以变量的形式放在 ``.py`` 文件中, 解释器解析脚本的速度是远远慢于使用 ``file.open`` 读取例如 ``.csv``, ``.txt`` 文件的速度。 这时候我们就需要一些数据文件随着我们安装我们的程序的同时一起被安装。 
 
-setup函数中与之相关的是两个参数 ``package_dir`` 和 ``package_data``。 如果你是使用的 ``setuptools.setup`` 而不是 ``distutils.setup`` 那么还有另一个参数 ``include_package_data`` 也很有用。
+setup函数中与之相关的是两个参数 ``package_dir`` 和 ``package_data``。 如果你是使用的 ``setuptools.setup`` 而不是 ``distutils.setup`` 那么还有另一个参数 ``include_package_data`` 也很有用。 
 
 在 ``canbeAny`` 项目中, 我们有一个txt文件:
 
@@ -81,8 +84,36 @@ setup函数中与之相关的是两个参数 ``package_dir`` 和 ``package_data`
 	在当前目录下, 找到 ``canbeAny`` package, 然后里面的所有 ``*.txt`` 文件, 
 	包括子文件夹中的文件, 都要被一并添加到安装包中。
 
-
 package data的其他方法和详细文档请看: https://pythonhosted.org/setuptools/setuptools.html#including-data-files
+
+
+setup函数参数详解
+====================================================================================================
+
+
+install_requires
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+指定了在安装这个包时, 需要哪些其他包。 如果条件不满足, 则会自动安装依赖的库。 这个命令在使用: ``python setup.py build``, ``python setup.py install`` 以及 ``pip install xxx`` 时会起作用
+
+.. code-block:: python
+
+	setup(install_requires=["requests"]) # example1
+	setup(install_requires=["numpy >= 1.8.1", "pandas >= 0.14.1"]) # example2
+
+
+setup_requires
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+指定了运行 ``setup.py`` 这个文件本身, 需要哪些其他包。 如果不满足, 则会使用 ``EasyInstall`` 尝试下载安装这些依赖库。 换言之, 如果 ``setup.py`` 文件前几行有 ``import xxx`` 类似的代码, 那么这些被import的第三方包就应该被放在 ``setup_requires`` 关键字中。 
+
+注意: 一但 ``setup.py`` 文件被成功运行, 进入安装状态, ``setup_requires`` 关键字中的包是 **不会被自动安装的**。
+
+.. code-block:: python
+
+	setup(setup_requires=["requests"]) # example
+
+Ref: https://pythonhosted.org/setuptools/setuptools.html#new-and-changed-setup-keywords
 
 
 附录 官方文档链接:
