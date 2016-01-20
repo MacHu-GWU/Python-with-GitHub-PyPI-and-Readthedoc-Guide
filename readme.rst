@@ -1,19 +1,21 @@
 如何将你的Python项目用Github保管, 并在Pypi上发布, 和部署你的在线文档网站
-================================================================================
+===================================================================================================
 
 - GitHub: https://github.com/MacHu-GWU/Python-with-GitHub-PyPI-and-Readthedoc-Guide
 - PyPI: https://pypi.python.org/pypi/canbeAny
 - Online Documentation: http://python-with-github-pypi-and-readthedoc-guide.readthedocs.org/
 
-.. image:: http://www.techweekeurope.co.uk/wp-content/uploads/2011/02/Open-Source-Software-.jpg
+.. image:: _static/OpenSourceSoftware.jpg
+
 
 前言:
 
-	本文提供的演示项目的网址: https://github.com/MacHu-GWU/Python-with-GitHub-PyPI-and-Readthedoc-Guide, 可以用于跟着本文的介绍, 完整地练习一遍。
+本文提供的演示项目的网址: https://github.com/MacHu-GWU/Python-with-GitHub-PyPI-and-Readthedoc-Guide, 可以用于跟着本文的介绍, 完整地练习一遍。
 
-	- 示例Github项目主页: https://github.com/MacHu-GWU/windtalker
-	- 示例PyPI页面: https://pypi.python.org/pypi/windtalker
-	- 示例在线文档网站: http://windtalker.readthedocs.org/
+- 示例Github项目主页: https://github.com/MacHu-GWU/windtalker
+- 示例PyPI页面: https://pypi.python.org/pypi/windtalker
+- 示例在线文档网站: http://windtalker.readthedocs.org/
+
 
 传送门:
 
@@ -26,8 +28,7 @@
 
 
 正文
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 当你开始使用第三方Python扩展包时, 经常看到各种各样的第三方Python扩展包有完整的:
 
 - 项目主页
@@ -61,17 +62,20 @@
 .. code-block:: python
 
 	<project_name>
-		|--- create_doctree.py # 用于生成 module and index
-		|--- build_doc.bat # 用于一键重新安装package, 执行create_doctree.py, 执行make.bat
-		|--- view_doc.bat # 用于一键打开build好的网站主页
+		|--- build_dist.bat    # 用于一键生成安装包, 在执行 pypi upload 命令先试用, 看是否和你预期要上传到PyPI的内容一致
+		|--- build_doc.bat     # 用于一键重新安装package到本地, 执行 create_doctree.py, 执行 make.bat
+		|--- install.bat       # 用于一键安装package到本地, 替换已装的版本
+		|--- pypi_register.bat # 用于一键上传package信息到pypi
+		|--- pypi_upload.bat   # 用于一键发布当前版本到pypi
+		|--- view_doc.bat      # 用于一键打开build好的网站主页
+		|--- create_doctree.py # 用于生成 module and index 的源文档的脚本
 
 
 .. _github:
 
 使用Github保管你的代码库
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-.. image:: http://blog.kanbanize.com/wp-content/uploads/2014/11/GitHub.jpg
+.. image:: _static/GitHub.jpg
 
 如何使用Github管理你的代码版本, 并不在本文的讨论范围之内, 请自行咨询 `谷神 <www.google.com>`_, `度娘 <www.baidu.com>`_。
 
@@ -87,8 +91,7 @@ Github提供了一个 `release <https://help.github.com/articles/creating-releas
 
 创建你的setup.py文件
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-.. image:: https://avatars3.githubusercontent.com/u/13561481?v=3&s=96
+.. image:: _static/Setup.png
 
 很久以前Python社区为了让大家能够更佳容易地发布自己的开源扩展包, 所以在标准库中包含了 `distutils <https://docs.python.org/2.7/library/distutils.html#module-distutils>`_ 库帮助用户distribute自己的扩展包。
 
@@ -103,8 +106,7 @@ Github提供了一个 `release <https://help.github.com/articles/creating-releas
 
 部署你的项目在PyPI上的主页
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-.. image:: https://pbs.twimg.com/profile_images/104712585/pypi_twitter_400x400.jpg
+.. image:: _static/PyPI.jpg
 
 我们以 `requests <https://pypi.python.org/pypi/requests>`_ 这一Python社区最流行的http扩展包(作者是Python社区顶级大牛, 他的项目值得每一个Python开发者作为教科书来学习, 无论是代码还是文档)为例进行解说。
 
@@ -145,8 +147,7 @@ Github提供了一个 `release <https://help.github.com/articles/creating-releas
 
 让你的包能通过 ``pip install`` 被安装
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-.. image:: http://caligari.treboada.net/public/img/posts/python-pip-and-the-staff-group-a.png
+.. image:: _static/Pip.png
 
 如果你有仔细阅读上一节的内容, 其实在 **File** 部分中所提到的一个默认的源代码包。(可以没有其他 ``.whl``, ``.exe`` 但一定会有的源码包)。使用下面的命令所上传的安装包是带有版本信息记录的, 只要你上传过一次, 就会在PyPI服务器上留下记录, 以同样的软件版本号无法再次上传。当开发流程熟悉稳定之后, 用户可以使用 ``upload`` 命令上传所有种类的安装包。但我推荐新手自己build安装包, 然后针对一个版本号在网页界面进行手动上传, 删除管理。
 
@@ -161,8 +162,7 @@ Github提供了一个 `release <https://help.github.com/articles/creating-releas
 
 部署你的文档网站
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-.. image:: http://blog.huangz.me/_images/readthedocs-logo.png
+.. image:: _static/ReadTheDoc.png
 
 在 `sphinx <http://sphinx-doc.org/>`_ 的帮助下, 我们完全可以将生成的静态网页部署在自己的网站上。例如 `Amazon Web Service S3 <http://docs.aws.amazon.com/AmazonS3/latest/dev/WebsiteHosting.html>`_ 就是一种很方便很便宜的选择。既然如此, 那 https://readthedocs.org/ 的好处是什么呢?
 
@@ -180,7 +180,6 @@ Github提供了一个 `release <https://help.github.com/articles/creating-releas
 
 Readthedoc简明介绍
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
 - 问: 我申请了readthedoc账号, 第一件事要做什么?
 
 	从github导入你的项目。具体方法是: 
@@ -208,7 +207,6 @@ Readthedoc简明介绍
 
 **至此, 你应该可以顺利的完成, 源代码保管在github, 在pypi发布你的扩展包, 支持pip install安装和发布你的在线文档网站了。撒花, 撒花!**
 
-.. image:: http://www.appguru.com.tw/appguru/apps/files/2012/10/A_006_300dpi1.gif
+.. image:: _static/c1_sa-hua.gif
 
 CopyRight: Sanhe Hu 2015, 转载请注明出处
-
