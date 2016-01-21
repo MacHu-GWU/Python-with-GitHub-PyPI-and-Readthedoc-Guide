@@ -3,7 +3,7 @@
 
 - GitHub: https://github.com/MacHu-GWU/Python-with-GitHub-PyPI-and-Readthedoc-Guide
 - PyPI: https://pypi.python.org/pypi/canbeAny
-- Online Documentation: http://python-with-github-pypi-and-readthedoc-guide.readthedocs.org/
+- Online Documentation: http://www.wbh-doc.com.s3.amazonaws.com/Python-with-GitHub-PyPI-and-Readthedoc-Guide/index.html
 
 .. image:: _static/OpenSourceSoftware.jpg
 
@@ -55,7 +55,7 @@
 		|--- readme.rst (or readme.md) # github, pypi项目主页说明文档
 		|--- make.bat # sphinx用于生成网站的批处理文件
 
-对于 ``MANIFEST.in`` 文件, 需要特别注意: 和 `package_data <http://python-with-github-pypi-and-readthedoc-guide.readthedocs.org/chapter1%20-%20setup.py%20file%20guide%20for%20human.html#include-package-data>`_ 不同的是, 这个储存的是包之外的文件。 详情请看: https://docs.python.org/2/distutils/sourcedist.html#manifest-template 
+对于 ``MANIFEST.in`` 文件, 需要特别注意: 和 `package_data <http://www.wbh-doc.com.s3.amazonaws.com/Python-with-GitHub-PyPI-and-Readthedoc-Guide/chapter1%20-%20setup.py%20file%20guide%20for%20human.html#include-package-data>`_ 不同的是, 这个储存的是包之外的文件。 详情请看: https://docs.python.org/2/distutils/sourcedist.html#manifest-template 
 
 另外地, 出于个人开发方便起见, 有一些自定义的文件, 目前就不进行详细介绍了。
 
@@ -99,7 +99,7 @@ Github提供了一个 `release <https://help.github.com/articles/creating-releas
 
 - 如何写setup.py文件: https://docs.python.org/2/distutils/setupscript.html
 
-关于setup.py文件的详细介绍, 我会在我的 `另一篇文章 <http://python-with-github-pypi-and-readthedoc-guide.readthedocs.org/chapter1%20-%20setup.py%20file%20guide%20for%20human.html>`_ 中详细陈述。
+关于setup.py文件的详细介绍, 我会在我的 `另一篇文章 <http://www.wbh-doc.com.s3.amazonaws.com/Python-with-GitHub-PyPI-and-Readthedoc-Guide/chapter1%20-%20setup.py%20file%20guide%20for%20human.html>`_ 中详细陈述。
 
 
 .. _pypi:
