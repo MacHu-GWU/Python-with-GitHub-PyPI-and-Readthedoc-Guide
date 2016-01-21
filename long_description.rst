@@ -22,4 +22,4 @@ Since this example package is on PyPI, you just need:
 
 Documentation
 --------------------------------------------------------------------------------
-Your online documentation website should looks like this: http://python-with-github-pypi-and-readthedoc-guide.readthedocs.org/
+Your online documentation website should looks like `This <http://www.wbh-doc.com.s3.amazonaws.com/Python-with-GitHub-PyPI-and-Readthedoc-Guide/index.html>`_
