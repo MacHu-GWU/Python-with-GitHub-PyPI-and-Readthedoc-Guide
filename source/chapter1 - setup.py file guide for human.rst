@@ -1,6 +1,6 @@
 .. _setup_file_guide:
 
-setup.py文件详解
+第一节, ``setup.py`` 文件详解
 ===================================================================================================
 
 ``setup.py`` 文件是我们在每一个要发布的package项目都必须的。 其中有林林总总的参数需要我们去设置。 固然我们可以手动输入这些参数, 但因为 ``setup.py`` 本身是Python脚本, 所以完全可以通过编程简化重复性的工作。 本项目的 `setup.py模板 <https://github.com/MacHu-GWU/Python-with-GitHub-PyPI-and-Readthedoc-Guide/blob/master/setup.py>`_ 就可以作为一个很好的例子。 
