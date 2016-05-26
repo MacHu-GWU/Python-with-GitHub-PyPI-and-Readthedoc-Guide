@@ -3,6 +3,7 @@
 如何将你的Python项目用Github保管, 并在Pypi上发布, 和部署你的在线文档网站
 ===============================================================================
 
+
 - GitHub: https://github.com/MacHu-GWU/Python-with-GitHub-PyPI-and-Readthedoc-Guide
 - PyPI: https://pypi.python.org/pypi/canbeAny
 - Tutorial (教程请戳我): http://www.wbh-doc.com.s3.amazonaws.com/Python-with-GitHub-PyPI-and-Readthedoc-Guide/index.html
@@ -11,6 +12,8 @@
 .. image:: _static/OpenSourceSoftware.jpg
 
 前言:
+
+Python语言最出彩的地方可能并不是他的简洁和优雅, 而是世界上首屈一指活跃的开发者社区。在社区里, 有无数的第三方包, 涵盖了各行各业的不同领域。 使得无论你做什么, 几乎都能找到扩展包达到你的目的。 所以才有这么多的开发者热衷于Python。 
 
 本文提供了一个演示项目: https://github.com/MacHu-GWU/Python-with-GitHub-PyPI-and-Readthedoc-Guide, 读者可以下载下来, 跟着本文的介绍, 完整地练习一遍。
 
